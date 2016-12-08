@@ -38,7 +38,7 @@ module.exports = (function () {
   FBMessenger.prototype.send = function (name, message) {
     // Find friend
     var browser = this.browser;
-    browser.fill('#header input[type=text]', 'Kevin Chavez');
+    browser.fill('#header input[type=text]', name);
     browser
       .pressButton('#header input[type=submit]')
       .then(function () {
@@ -50,7 +50,7 @@ module.exports = (function () {
       })
       .then(function () {
         // Enter message and send
-        browser.fill('textarea', 'test message, pls ignore');
+        browser.fill('textarea', message);
         return browser.click('input[name="Send"]');
       })
       .then(function () {
