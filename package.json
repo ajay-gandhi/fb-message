@@ -1,0 +1,28 @@
+{
+  "name": "fb-message",
+  "version": "0.0.1",
+  "description": "Package for sending Facebook messages",
+  "main": "message.js",
+  "dependencies": {
+    "zombie": "^5.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajay-gandhi/fb-message.git"
+  },
+  "keywords": [
+    "facebook",
+    "message",
+    "api"
+  ],
+  "author": "Ajay Gandhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajay-gandhi/fb-message/issues"
+  },
+  "homepage": "https://github.com/ajay-gandhi/fb-message#readme"
+}
