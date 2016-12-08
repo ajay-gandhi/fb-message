@@ -25,12 +25,10 @@ module.exports = (function () {
           .fill('email', email)
           .fill('pass',  pass);
 
-        console.log('about to log in');
         // Log in to Facebook
         return browser.pressButton('Log In');
       })
       .then(function () {
-        console.log('we good?');
         browser.assert.text('title', 'Facebook');
       })
       // Catch errors
@@ -53,7 +51,6 @@ module.exports = (function () {
       .then(function () {
         // Enter message and send
         browser.fill('textarea', message);
-        console.log('sent message', name, message);
         return browser.click('input[name="Send"]');
       })
       .then(function () {
